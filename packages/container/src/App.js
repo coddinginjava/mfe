@@ -1,12 +1,15 @@
 import React from 'react';
-import Mount from "./components/Marketing"
-
+import MarketingApp from "./components/Marketing";
+import { BrowserRouter } from "react-router-dom"
+import Header from "./components/Header";
 export default () => {
     return (
-        <div>
-            <h1>Contaier app !!</h1>
-            <hr />
-            <Mount />
-        </div>
+        <BrowserRouter>
+            <div>
+                <Header />
+                <MarketingApp />
+            </div>
+        </BrowserRouter>
+
     );
 }
